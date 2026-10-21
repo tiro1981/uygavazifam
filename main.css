@@ -1,0 +1,252 @@
+/* hanken-grotesk-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/hanken-grotesk-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* hanken-grotesk-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/hanken-grotesk-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(190, 216, 239);
+}
+.container {
+  width: 650px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(61, 108, 236, 0.1);
+  font-family: "Hanken Grotesk";
+}
+.section1 {
+  width: 50%;
+  padding: 35px 30px 40px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7857ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section1-title {
+  font-size: 22px;
+  color: #c8c7ff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.blu {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #5124e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.u76 {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.of100 {
+  color: #b5aaff;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.textg {
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.text1 {
+  color: #cfccff;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 240px;
+}
+
+.text2 {
+  width: 50%;
+  padding: 35px 30px;
+}
+
+.section2-title {
+  font-size: 22px;
+  color: #303b59;
+  margin-bottom: 25px;
+}
+
+.teg {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tiro {
+  font-size: 15px;
+  min-height: 50px;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tiro-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.btn-icon {
+  font-size: 20px;
+}
+
+.tiro p {
+  color: #303b59;
+  font-weight: 700;
+}
+
+.tiro p span {
+  color: #9296a8;
+}
+
+.reaction {
+  background-color: #fff6f5;
+  color: #ff5757;
+}
+
+.memory {
+  background-color: #fffbf2;
+  color: #ffb01f;
+}
+
+.verbal {
+  background-color: #f2fbfa;
+  color: #00bd91;
+}
+
+.visual {
+  background-color: #f3f3fd;
+  color: #1125d6;
+}
+
+.continue-btn {
+  width: 100%;
+  margin-top: 28px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2455da;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.continue-btn:hover {
+  background: linear-gradient(180deg, #7857ff, #2e2be9);
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    background-color: #ffffff;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 420px;
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .section1 {
+    width: 100%;
+    padding: 25px 30px 35px;
+    border-radius: 0 0 32px 32px;
+  }
+
+  .section1-title {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .blu {
+    width: 140px;
+    height: 140px;
+  }
+
+  .u76 {
+    font-size: 56px;
+  }
+
+  .of100 {
+    font-size: 26px;
+    margin-top: 22px;
+  }
+
+  .textg {
+    max-width: 270px;
+    font-size: 16px;
+  }
+
+  .text2 {
+    width: 100%;
+    padding: 26px 30px 30px;
+  }
+
+  .section2-title {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  .tiro {
+    min-height: 55px;
+  }
+
+  .continue-btn {
+    margin-top: 24px;
+  }
+}
